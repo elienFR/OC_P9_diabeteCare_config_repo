@@ -14,3 +14,10 @@ spring:
       # Same prop as above but written differently
 #      uri: 'mongodb://localhost:27017/diabetecare'
 
+#Eureka
+eureka:
+  client:
+    serviceUrl.defaultZone: 'http://localhost:9102/eureka/'
+    registerWithEureka: 'true'
+    fetchRegistry: 'true'
+
