@@ -21,3 +21,7 @@ eureka:
     registerWithEureka: 'true'
     fetchRegistry: 'true'
 
+#Personal configs
+#Api version
+api:
+  ver: 'v1'
