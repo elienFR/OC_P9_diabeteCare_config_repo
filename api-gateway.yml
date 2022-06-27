@@ -1,6 +1,6 @@
 # SpringBoot
 server:
-  port: 8081
+  port: 9101
 
 info:
   app:
