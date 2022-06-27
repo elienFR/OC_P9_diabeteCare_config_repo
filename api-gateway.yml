@@ -4,7 +4,7 @@ server:
 
 info:
   app:
-    name: ${spring.application.name}
+    name: '${spring.application.name}'
 
 # Eureka
 eureka:
@@ -16,15 +16,15 @@ eureka:
 
 # Api Gateway
 spring:
-  application:
-    name: 'api-gateway'
   cloud:
     gateway:
       routes:
         - id: microservice-patients
-          uri: lb://microservice-patients
+          uri: 'lb://microservice-patients'
           predicates:
             - Path=/patient/**
+          filters:
+            - PrefixPath=/api/v1
 
 #Actuator
 management:
