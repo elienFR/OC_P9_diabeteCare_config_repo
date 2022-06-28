@@ -8,11 +8,11 @@ spring:
       hibernate:
         dialect: 'org.hibernate.dialect.MySQL8Dialect'
         ddl-auto: 'always'
-    datasource:
-      url: 'jdbc:mysql://localhost:3306/diabetecare'
-      username: 'diabetecareusr'
-      password: 'diabetecare123'
-      initialize: 'true'
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/diabetecare'
+    username: 'diabetecareusr'
+    password: 'diabetecare123'
+    initialize: 'true'
 
 #Eureka
 eureka:
