@@ -2,17 +2,17 @@ server:
   port: 8081
 
 spring:
-  data:
-    mongodb:
-      host: 'localhost'
-      port: 27017
-      database: 'diabetecare'
-#      username: ''
-#      password: ''
-      auto-index-creation: 'true'
-
-      # Same prop as above but written differently
-#      uri: 'mongodb://localhost:27017/diabetecare'
+  jpa:
+    show-sql: 'true'
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.MySQL8Dialect'
+        ddl-auto: 'always'
+    datasource:
+      url: 'jdbc:mysql://localhost:3306/diabetecare'
+      username: 'diabetecareusr'
+      password: 'diabetecare123'
+      initialize: 'true'
 
 #Eureka
 eureka:
