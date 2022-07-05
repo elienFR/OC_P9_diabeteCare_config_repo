@@ -25,6 +25,12 @@ spring:
             - Path=/patient/**
           filters:
             - PrefixPath=/api/v1
+        - id: microservice-patienthistory
+          uri: 'lb://microservice-patienthistory'
+          predicates:
+            - Path=/patHistory/**
+          filters:
+            - PrefixPath=/api/v1
 
 #Actuator
 management:
