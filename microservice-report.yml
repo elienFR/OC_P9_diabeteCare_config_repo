@@ -1,10 +1,5 @@
 server:
-  port:
-    8100
-
-localConfig:
-  microServicePatients:
-    uri: 'lb://api-gateway/patient'
+  port: 8080
 
 #Eureka
 eureka:
@@ -13,6 +8,11 @@ eureka:
       defaultZone: 'http://localhost:9102/eureka/'
     registerWithEureka: 'true'
     fetchRegistry: 'true'
+
+#Personal configs
+#Api version
+api:
+  ver: 'v1'
 
 management:
   endpoints:
