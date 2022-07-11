@@ -31,6 +31,12 @@ spring:
             - Path=/patHistory/**
           filters:
             - PrefixPath=/api/v1
+        - id: 'microservice-report'
+            uri: 'lb://microservice-report'
+            predicates:
+              - Path=/assess/**
+            filters:
+              - PrefixPath=/api/v1
 
 #Actuator
 management:
